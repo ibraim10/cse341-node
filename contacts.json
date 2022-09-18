@@ -1,0 +1,24 @@
+{
+    "contact1": {
+        "firstName": "Nicole",
+        "lastName": "Velez",
+        "email": "nico@gmail.com",
+        "favoriteColor": "Pink",
+        "birthday": "06/10/2002"
+    },
+    "contact2": {
+        "firstName": "Messi",
+        "lastName": "Lionel",
+        "email": "messi10@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "07/20/1990"
+    },
+    "contact2": {
+        "firstName": "Messi",
+        "lastName": "Lionel",
+        "email": "messi10@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "07/20/1990"
+    }
+
+}
