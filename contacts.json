@@ -13,12 +13,12 @@
         "favoriteColor": "Blue",
         "birthday": "07/20/1990"
     },
-    "contact2": {
-        "firstName": "Messi",
-        "lastName": "Lionel",
-        "email": "messi10@gmail.com",
-        "favoriteColor": "Blue",
-        "birthday": "07/20/1990"
+    "contact3": {
+        "firstName": "Ara",
+        "lastName": "Gar",
+        "email": "aragar@gmail.com",
+        "favoriteColor": "Purple",
+        "birthday": "12/30/1999"
     }
 
 }

@@ -1,8 +1,28 @@
-GET http://localhost:3000/contacts/63239c40a7b6d46a2b1f0014 
-
 // LOCALHOST 
-//GET http://localhost:3000/contacts/63239c40a7b6d46a2b1f0014 
-### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b2
- ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b4
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e1
+### 
+GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e2
+### 
+GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e3 
 
-// PRODUCTION Deploy ### GET https://cse341-instructor.herokuapp.com/contacts ### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b2 ### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3 ### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
+
+
+// PRODUCTION Deploy 
+### GET https://cse341-instructor.herokuapp.com/contacts 
+### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b2
+### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
+### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
+
+
+//test
+
+# POST http://localhost:3000/contacts
+# POST http://localhost:3000/contacts?contact=id&number=554488
+# content-type: application/json
+# {
+#     "name": "Ibrahimovic"
+# }
+
+

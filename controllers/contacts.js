@@ -1,25 +1,21 @@
-const mongodb = require('../db/connect');
-const ObjectId = require('mongodb').ObjectId;
+const Model = require('../db/model');
 
-const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection('contacts').find();
-  result.toArray().then((lists) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists);
-  });
+const getAll = async (req, res, next) =>{
+  const contacts = await Model.find();
+  res.setHeader('Content-Type', 'application/json');
+  res.status(200).json(contacts);
 };
 
 const getSingle = async (req, res, next) => {
-  const userId = new ObjectId(req.params.id);
-  const result = await mongodb
-    .getDb()
-    .db()
-    .collection('contacts')
-    .find({ _id: userId });
-  result.toArray().then((lists) => {
+  const {userId} = req.params;
+  const contact = await Model.findById(userId);
     res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists[0]);
-  });
+    res.status(200).json(contact);
 };
 
-module.exports = { getAll, getSingle };
+
+module.exports = { 
+        getAll,
+        getSingle
+        };
+
