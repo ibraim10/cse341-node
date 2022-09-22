@@ -6,7 +6,30 @@ GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e1
 GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e2
 ### 
 GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e3 
+### 
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
 
+    {
+        "firstName": "Pato",
+        "lastName": "O'Ward",
+        "email": "Poward@gmail.com",
+        "favoriteColor": "Orange",
+        "birthday": "02/20/1996"
+    }
+### 
+PUT  http://localhost:3000/contacts/632bceb4e23bdb447eb452a0
+content-type: application/json
+
+    {
+        "firstName": "Checo",
+        "lastName": "Perez",
+        "email": "sp@gmail.com",
+        "favoriteColor": "Red",
+        "birthday": "14/04/1975"
+    }
+### 
+DELETE http://localhost:3000/contacts/632bceb4e23bdb447eb452a0
 
 
 // PRODUCTION Deploy 
@@ -18,15 +41,29 @@ GET https://cse341-node-wk0g.onrender.com/contacts/632a2f1616dc784731c9c7e1
 GET https://cse341-node-wk0g.onrender.com/contacts/632a2f1616dc784731c9c7e2
 ### 
 GET https://cse341-node-wk0g.onrender.com/contacts/632a2f1616dc784731c9c7e3 
+### 
+POST http://cse341-node-wk0g.onrender.com/contacts HTTP/1.1
+content-type: application/json
 
+    {
+        "firstName": "Pato",
+        "lastName": "O'Ward",
+        "email": "Poward@gmail.com",
+        "favoriteColor": "Orange",
+        "birthday": "02/20/1996"
+    }
+### 
+PUT  http://cse341-node-wk0g.onrender.com/contacts/632bceb4e23bdb447eb452a0
+content-type: application/json
 
-//test
-
-# POST http://localhost:3000/contacts
-# POST http://localhost:3000/contacts?contact=id&number=554488
-# content-type: application/json
-# {
-#     "name": "Ibrahimovic"
-# }
+    {
+        "firstName": "Checo",
+        "lastName": "Perez",
+        "email": "sp@gmail.com",
+        "favoriteColor": "Red",
+        "birthday": "14/04/1975"
+    }
+### 
+DELETE http://cse341-node-wk0g.onrender.com/contacts/632bceb4e23bdb447eb452a0
 
 
