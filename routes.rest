@@ -1,7 +1,7 @@
 // LOCALHOST 
 GET http://localhost:3000/contacts
 ###
-GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e1
+GET http://localhost:3000/contacts/632ed41c15bda6a4570f6fcb
 ### 
 GET http://localhost:3000/contacts/632a2f1616dc784731c9c7e2
 ### 
@@ -36,7 +36,7 @@ DELETE http://localhost:3000/contacts/632bceb4e23bdb447eb452a0
 ### 
 GET https://cse341-node-wk0g.onrender.com/contacts
 ### 
-GET https://cse341-node-wk0g.onrender.com/contacts/632a2f1616dc784731c9c7e1
+GET https://cse341-node-wk0g.onrender.com/contacts/632ed41c15bda6a4570f6fcb
 ### 
 GET https://cse341-node-wk0g.onrender.com/contacts/632a2f1616dc784731c9c7e2
 ### 
@@ -46,14 +46,14 @@ POST http://cse341-node-wk0g.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
     {
-        "firstName": "Pato",
-        "lastName": "O'Ward",
-        "email": "Poward@gmail.com",
-        "favoriteColor": "Orange",
-        "birthday": "02/20/1996"
+        "firstName": "Valeria",
+        "lastName": "Olvera",
+        "email": "Vale@gmail.com",
+        "favoriteColor": "Beige",
+        "birthday": "02/30/2005"
     }
 ### 
-PUT  http://cse341-node-wk0g.onrender.com/contacts/632bceb4e23bdb447eb452a0
+PUT  http://cse341-node-wk0g.onrender.com/contacts/632bd6981a5da57930a60dc1
 content-type: application/json
 
     {
@@ -64,6 +64,6 @@ content-type: application/json
         "birthday": "14/04/1975"
     }
 ### 
-DELETE http://cse341-node-wk0g.onrender.com/contacts/632bceb4e23bdb447eb452a0
+DELETE http://cse341-node-wk0g.onrender.com/contacts/632bd6981a5da57930a60dc1
 
 

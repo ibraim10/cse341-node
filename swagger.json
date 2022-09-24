@@ -1,0 +1,134 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Contacts API",
+        "description": "Is an API of my contacts",
+        "version": "1.0.0"
+    },
+    "host": "cse341-node-wk0g.onrender.com",
+    "basePath": "/",
+    "schemes": ["https"],
+    "paths": {
+        "/contacts/": {
+            "get": {
+                "description": "It takes all contacts",
+                "produces": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "description": "You can add a contact",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "firstName": {
+                                    "example": "any"
+                                },
+                                "lastName": {
+                                    "example": "any"
+                                },
+                                "email": {
+                                    "example": "any"
+                                },
+                                "favoriteColor": {
+                                    "example": "any"
+                                },
+                                "birthday": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    }
+                }
+            }
+        },
+        "/contacts/{userId}": {
+            "get": {
+                "description": "It takes only one contact",
+                "produces": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "put": {
+                "description": "You can update a contact",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "firstName": {
+                                    "example": "any"
+                                },
+                                "lastName": {
+                                    "example": "any"
+                                },
+                                "email": {
+                                    "example": "any"
+                                },
+                                "favoriteColor": {
+                                    "example": "any"
+                                },
+                                "birthday": {
+                                    "example": "any"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            },
+            "delete": {
+                "description": "You can delete a contact",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}
